@@ -1,5 +1,5 @@
 package Oops;
-
+import static Oops.message.message1;
 public class Car {
     public static void main(String[] args){
         int a = 10;
@@ -36,15 +36,21 @@ public class Car {
 
 
 
-        B obj;
+//        B obj ;
 
-        for(int i =0; i< 1000000000; i++){
-            obj = new B("Random names");
-        }
+//        for(int i =0; i< 1000000000; i++){
+//            obj = new B("Random names");
+//        }
+
+
+        message1();
 
 
 
     }
+
+
+
     static void swap(int a , int b){
         Integer temp = a;
         a = b;
