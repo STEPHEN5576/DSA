@@ -11,12 +11,17 @@ public class Innerclassexample {
         Test(String name){
             this.name= name;
         }
+        public String toString(){
+            return name;
+        }
     }
+
     public static void main(String[] args) {
         Test a = new Test("stephen");
         Test b = new Test("ron");
-        System.out.println(a.name);
-        System.out.println(b.name);
+//        System.out.println(a.name);
+//        System.out.println(b.name);
+        System.out.println(a);
 
 
     }
