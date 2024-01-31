@@ -10,12 +10,15 @@ public class Box {
         this.l= -1;
         this.w= -1;
 
+
     }
     // cube
     Box(double side){
+//        super(); object class
         this.w = side;
         this.l = side;
         this.h = side;
+
     }
 
     Box(double l, double w, double h){
