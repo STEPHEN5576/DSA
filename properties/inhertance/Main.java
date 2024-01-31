@@ -10,7 +10,7 @@ public class Main {
 //        Boxweight box4 = new Boxweight(4,4,4,20);
 //        System.out.println(box4.l);
 
-        Box box5 = new Boxweight(2,3,4,8);
+//        Box box5 = new Boxweight(2,3,4,8);
 //        System.out.println(box5.wieght); you cannot acess the child value
 //        in parent class
 
@@ -25,6 +25,11 @@ public class Main {
 //        Boxweight box6 = new Box(12,23,23);
 //        System.out.println(box6);
 
-
+        BoxPeice box7 = new BoxPeice(12,32,12,32,32);
+        System.out.println(box7.l);
+        BoxPeice box8 = new BoxPeice();
+        System.out.println(box8.w);
+        BoxPeice box9 = new BoxPeice(box8);
+        System.out.println(box9.price);
     }
 }

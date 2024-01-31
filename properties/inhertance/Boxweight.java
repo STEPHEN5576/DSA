@@ -13,5 +13,11 @@ public class Boxweight extends Box{
         // initailsizes first
 
         this.wieght = wieght;
+
+    }
+    Boxweight(Boxweight other){
+        super(other);
+        this.wieght= other.wieght;
+
     }
 }
