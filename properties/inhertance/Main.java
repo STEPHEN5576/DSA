@@ -34,6 +34,6 @@ public class Main {
         System.out.println(box8.w);
         BoxPeice box9 = new BoxPeice(box8);
         System.out.println(box9.price);
-
+        System.out.println(box9 instanceof Box);
     }
 }
