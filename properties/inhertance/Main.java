@@ -27,9 +27,13 @@ public class Main {
 
         BoxPeice box7 = new BoxPeice(12,32,12,32,32);
         System.out.println(box7.l);
+
+        Box.greeting();
+
         BoxPeice box8 = new BoxPeice();
         System.out.println(box8.w);
         BoxPeice box9 = new BoxPeice(box8);
         System.out.println(box9.price);
+
     }
 }

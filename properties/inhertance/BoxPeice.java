@@ -6,6 +6,10 @@ public class BoxPeice extends Boxweight{
         super(l,h,w,wieght);
         this.price = price;
     }
+
+    static void greeting(){
+        System.out.println("Hi I am a box weight");
+    }
     BoxPeice(){
         super();
         this.price=-1;

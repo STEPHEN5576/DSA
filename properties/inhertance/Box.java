@@ -9,15 +9,20 @@ public class Box {
         this.h = -1;
         this.l= -1;
         this.w= -1;
-
-
     }
+
+    // will not overiding
+    static void greeting(){
+        System.out.println("Hi I am a box");
+    }
+
     // cube
     Box(double side){
 //        super(); object class
         this.w = side;
         this.l = side;
         this.h = side;
+        greeting();
 
     }
 
@@ -25,6 +30,7 @@ public class Box {
         this.l = l;
         this.w = w;
         this.h= h;
+        greeting();
     }
 
     Box(Box old){
