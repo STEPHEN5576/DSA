@@ -10,5 +10,7 @@ public class Main {
         square.area();
         Shapes square1 = new Square();
         square1.area();
+        Shapes circle1 = new Circle();
+        circle1.area();
     }
 }
