@@ -1,7 +1,6 @@
 package Linklist.CustomLinklist;
 
 public class LL {
-
     private Node head;
     private Node tail;
     private int size;
