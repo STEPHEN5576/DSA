@@ -9,6 +9,7 @@ public class Main {
         list.insertFrist(4);
         list.insertFrist(5);
         list.insertlast(99);
+        list.insert(2,64);
         list.display();
     }
 }

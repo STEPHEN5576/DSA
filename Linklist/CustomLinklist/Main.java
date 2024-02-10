@@ -9,6 +9,8 @@ public class Main {
         list.insertFirst(1);
         list.insertFirst(3);
         list.inserlast(99);
+        list.inserlast(99);
+        list.inserlast(99);
         list.insert(12,0);
         list.display();
         list.deletefirst();

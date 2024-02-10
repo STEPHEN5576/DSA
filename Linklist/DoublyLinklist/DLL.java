@@ -4,7 +4,31 @@ public class DLL {
     Node head;
 
 
+    public void insert(int after, int val){
+        Node p = find(after);
+        if(p == null){
+            System.out.println("desont not exist");
+            return;
+        }
+        Node node = new Node(val);
+        node.next = p.next;
+        p.next = node;
+        node.prev= p;
+        if(node.next != null){
+            node.next.prev= node;
+        }
+    }
 
+    public Node find(int value){
+        Node node = head;
+        while(node != null){
+            if(node.val == value){
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
     public void insertlast(int val){
         Node node = new Node(val);
         Node temp = head;

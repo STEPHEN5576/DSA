@@ -127,4 +127,63 @@ public class LL {
 
         }
     }
+
+    // questions
+//    1.
+    public void duplicates(){
+      Node node = head;
+      while(node.next != null){
+          if(node.value == node.next.value){
+              node.next = node.next.next;
+          }else{
+              node = node.next;
+              size--;
+          }
+          tail = node;
+          tail.next = null;
+      }
+    }
+
+//    2. merge
+
+    public  LL merge(LL first, LL second){
+       Node f = first.head;
+       Node s = second.head;
+
+       LL ans = new LL();
+
+       while (f != null && s != null){
+           if(f.value < s.value){
+               ans.insertFirst(f.value);
+               f = f.next;
+           }else{
+               ans.insertFirst(s.value);
+              s= s.next;
+           }
+
+       }
+       while(f != null){
+           ans.insertFirst(f.value);
+           f= f.next;
+       }while(s != null){
+           ans.insertFirst(s.value);
+           s= s.next;
+       }
+       return ans;
+
+
+    }
+
+    public static void main(String[] args) {
+        LL list = new LL();
+        list.insertFirst(1);
+        list.insertFirst(1);
+        list.insertFirst(4);
+        list.insertFirst(6);
+        list.insertFirst(6);
+        list.display();
+        list.duplicates();
+        list.display();
+
+    }
 }
