@@ -1,8 +1,6 @@
 package Treads;
 
 public class Thread1 extends Thread{
-
-
     public Thread1(String name){
         super(name);
     }
