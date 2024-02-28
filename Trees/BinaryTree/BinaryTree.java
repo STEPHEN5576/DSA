@@ -44,7 +44,7 @@ private Node root;
     public void display(){
         display(root, "");
     }
-    private void display(Node node, String indent){
+    public void display(Node node, String indent){
         if(node == null){
             return;
         }
@@ -54,4 +54,23 @@ private Node root;
 
     }
 
+    public void PreetyDisplay(){
+        PreetyDisplay(root , 0);
+    }
+
+    private void PreetyDisplay(Node node, int level){
+        if(node == null){
+            return;
+        }
+        PreetyDisplay(node.right, level+1);
+        if(level != 0){
+            for (int i = 0; i < level; i++) {
+                System.out.print("|\t\t");
+            }
+            System.out.println("|------>" + node.value);
+        } else{
+            System.out.println(node.value);
+        }
+        PreetyDisplay(node.left , level+1);
+    }
 }

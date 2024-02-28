@@ -7,6 +7,7 @@ public class Main {
         BinaryTree tree = new BinaryTree();
         tree.insert(sc);
         tree.display();
+        tree.PreetyDisplay();
 
     }
 }

@@ -16,7 +16,6 @@ public class Stack {
             array[stacktop] = elements;
             return true;
         }
-
     }
     // internally this happens
     public synchronized int pop(){
