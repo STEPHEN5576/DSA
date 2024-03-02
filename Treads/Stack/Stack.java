@@ -6,7 +6,6 @@ public class Stack {
     // only one lock should be because tread is now bound to this lock
     // which means other than this others cant use them
     final Object lock;
-
     public synchronized boolean push(int elements){
         // you can do it without writing synchronized by just writing synchronized(lock)
         synchronized (this){
