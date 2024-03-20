@@ -19,22 +19,23 @@ public class SubstringCheck {
         if(str == null || subString == null){
             return false;
         }
-        int strLength = str.length();
-        int subLength = subString.length();
+        int strlength = str.length();
+        int subStringLength = subString.length();
 
-        for (int i = 0; i <= strLength - subLength; i++) {
+        for(int i =0; i <= strlength-subStringLength; i++){
             boolean found = true;
-            for (int j = 0; j < subLength; j++) {
-                if (str.charAt(i + j) != subString.charAt(j)) {
+            for(int j =0; j< subStringLength; i++){
+
+                if(str.charAt(i+ j) != subString.charAt(j)){
                     found = false;
                     break;
                 }
             }
-            if (found) {
+            if(found){
                 return true;
             }
+
         }
         return false;
-
     }
 }
