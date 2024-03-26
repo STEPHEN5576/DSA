@@ -11,7 +11,7 @@ public class SubstringCheck {
         // 2. method 2nd
 
         String str = "Hello, World";
-        String str2 = "Hello";
+        String str2 = "World";
        boolean checked = checkSubString(str, str2);
         System.out.println(checked);
     }

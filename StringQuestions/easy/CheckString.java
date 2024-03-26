@@ -6,7 +6,7 @@ public class CheckString {
         String str1 = "HELLO WORLD";
         String str2 = null;
 
-        Boolean checked = checkString(str);
+        Boolean checked = checkString(str2);
         System.out.println(checked);
     }
     public static boolean checkString(String str){

@@ -3,7 +3,7 @@ package StringQuestions.easy;
 public class CheckIndex {
     public static void main(String[] args) {
         String str = "Hello, World";
-        int index = 66;
+        int index = 8;
 
         char result = check(str, index);
         System.out.println(result);
